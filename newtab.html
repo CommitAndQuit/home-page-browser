@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <div class="container">
+    <div class="bookmarks-container">
+      <h1>Bookmarks</h1>
+      <div id="bookmarks" class="bookmarks-grid">
+        <!-- Bookmarks will be inserted here by JavaScript -->
+      </div>
+      <button id="show-all-btn" title="Show all bookmarks">+</button>
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="bookmarks-popup" class="popup hidden">
+    <div class="popup-content">
+      <button id="close-popup-btn" title="Close">&times;</button>
+      <h2>All Bookmarks</h2>
+      <div id="popup-bookmarks" class="bookmarks-grid popup-grid">
+        <!-- Full bookmarks list will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
